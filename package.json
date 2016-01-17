@@ -1,0 +1,48 @@
+{
+  "name": "finder-tag",
+  "version": "1.0.0",
+  "description": "Easily add color tags to files and folders on Mac OS X",
+  "license": "MIT",
+  "repository": "DaveJ/finder-tag",
+  "author": {
+    "name": "DaveJ",
+    "email": "dave@davejeffery.com",
+    "url": "https://twitter.com/DaveJ"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "osx",
+    "tag",
+    "tags",
+    "color",
+    "colour",
+    "finder",
+    "mavericks",
+    "yosemite",
+    "mac"
+  ],
+  "dependencies": {
+    "expand-tilde": "^1.2.0",
+    "meow": "^3.6.0",
+    "pify": "^2.3.0"
+  },
+  "devDependencies": {
+    "ava": "^0.8.0",
+    "xo": "^0.12.1"
+  },
+  "xo": {
+    "space": 2
+  }
+}
