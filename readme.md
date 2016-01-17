@@ -30,6 +30,30 @@ $ finder-tag --help
     /root/site/scripts/app.js all tags have been cleared
 ```
 
+## Using Programmatically
+
+### Install
+
+```
+$ npm install --save finder-tag
+```
+
+
+### Usage
+
+```js
+const finderTag = require('finder-tag');
+
+finderTag('/some/path', 'blue').then(
+  (result) => console.log(result)
+  // { code: 0,
+  //   command: 'xattr ...',
+  //   path: '/some/path',
+  //   tag: 'blue' }
+);
+```
+
+
 ## API
 
 ### finderTag(path, color)
@@ -54,23 +78,6 @@ Available Colors:
   * 'orange'
   * 'clear' - This will remove all tags
 
-## Using Programmatically
-
-### Install
-
-```
-$ npm install --save finder-tag
-```
-
-
-### Usage
-
-```js
-const finderTag = require('finder-tag');
-
-finderTag('unicorns');
-//=> 'unicorns & rainbows'
-```
 
 ## License
 
