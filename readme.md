@@ -1,6 +1,6 @@
 # finder-tag [![Build Status](https://travis-ci.org/DaveJ/finder-tag.svg?branch=master)](https://travis-ci.org/DaveJ/finder-tag)
 
-> My polished module
+> Add color tags to files and folders on Mac OS X
 
 ## CLI
 
