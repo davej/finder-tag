@@ -1,9 +1,11 @@
 {
   "name": "finder-tag",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Easily add color tags to files and folders on Mac OS X",
   "license": "MIT",
-  "os" : [ "darwin" ],
+  "os": [
+    "darwin"
+  ],
   "repository": "DaveJ/finder-tag",
   "author": {
     "name": "DaveJ",
