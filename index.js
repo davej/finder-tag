@@ -27,6 +27,10 @@ const colorMap = {
 };
 
 module.exports = function (path, color) {
+  if (process.platform !== 'darwin') {
+    return Promise.reject(new Error('Only OS X systems are currently supported'));
+  }
+
   if (typeof path !== 'string') {
     return Promise.reject(new TypeError('path should be a string'));
   }

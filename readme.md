@@ -2,6 +2,8 @@
 
 > Add color tags to files and folders on Mac OS X
 
+*Note: this module currently only supports color tags on OS X. Support for adding/setting/getting all tags may come in the future. Pull Requests for this are welcome.*
+
 ## CLI
 
 ```
@@ -11,14 +13,13 @@ $ npm install --global finder-tag
 ```
 $ finder-tag --help
 
-  Add color tags to files and folders on Mac OS X
+  Easily add color tags to files and folders on Mac OS X
 
   Usage
     $ finder-tag [path] [color]
 
   Available Colors:
-    gray, green, purple, blue, yellow, red, orange
-
+    `gray`, `green`, `purple`, `blue`, `yellow`, `red`, `orange`
     To clear all tags pass `clear` as the color
 
   Examples
