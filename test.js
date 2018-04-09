@@ -8,16 +8,6 @@ let absolutePath;
 let relativePath;
 let tildePath;
 
-test.after('clear test tags', () =>
-  Promise.all(
-    [
-      fn(absolutePath, 'clear'),
-      fn(relativePath, 'clear'),
-      fn(tildePath, 'clear')
-    ]
-  )
-);
-
 test('absolute path', t => {
   const pkg = 'ava';
   absolutePath = path.join(nm, pkg);
@@ -66,4 +56,14 @@ test('color does not exist', t =>
 test('path is not string', t =>
   fn(92403, 'hotpink')
     .then(t.fail, err => t.ok(err.message.includes('path should be a string')))
+);
+
+test.after('clear test tags', () =>
+  Promise.all(
+    [
+      fn(absolutePath, 'clear'),
+      fn(relativePath, 'clear'),
+      fn(tildePath, 'clear')
+    ]
+  )
 );
