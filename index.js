@@ -46,7 +46,7 @@ module.exports = function (path, color) {
   }
 
   const hexString = '0'.repeat(18) + colorMap[color] + '0'.repeat(44);
-  const command = `xattr -wx com.apple.FinderInfo ${hexString} ${path}`;
+  const command = `xattr -wx com.apple.FinderInfo ${hexString} ${path.replace(/ /g, '\\ ')}`;
 
   return stat(path).then(
     () => exec(command)
