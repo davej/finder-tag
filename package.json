@@ -17,7 +17,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "test": "xo && ava"
+    "test": "ava"
   },
   "files": [
     "index.js",
@@ -37,13 +37,12 @@
     "mac"
   ],
   "dependencies": {
-    "expand-tilde": "^1.2.0",
-    "meow": "^3.6.0",
-    "pify": "^2.3.0"
+    "expand-tilde": "^2.0.2",
+    "meow": "^4.0.0",
+    "pify": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^0.8.0",
-    "xo": "^0.12.1"
+    "ava": "^0.25.0"
   },
   "xo": {
     "space": 2
