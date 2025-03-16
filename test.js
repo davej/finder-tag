@@ -1,6 +1,10 @@
 import test from 'ava';
-import fn from './';
+import fn from './index.js';
 import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const nm = path.join(__dirname, 'node_modules');
 

@@ -38,11 +38,11 @@
   ],
   "dependencies": {
     "expand-tilde": "^2.0.2",
-    "meow": "^4.0.0",
+    "meow": "^13.2.0",
     "pify": "^3.0.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0"
+    "ava": "^6.2.0"
   },
   "xo": {
     "space": 2
