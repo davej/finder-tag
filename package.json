@@ -38,7 +38,7 @@
   ],
   "dependencies": {
     "expand-tilde": "^2.0.2",
-    "meow": "^13.2.0",
+    "meow": "^9.0.0",
     "pify": "^3.0.0"
   },
   "devDependencies": {
